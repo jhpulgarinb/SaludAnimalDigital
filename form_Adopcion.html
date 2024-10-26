@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+    <title>Formulario de Adopción - SaludAnimalDigital</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <h1>Formulario de Adopción</h1>
+    <form action="procesar_formulario.php" method="post"> <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo   
+ electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>   
+
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="direccion">Dirección:</label>   
+
+        <textarea id="direccion" name="direccion" required></textarea>   
+
+
+        <label for="mascota">Mascota de interés:</label>
+        <select id="mascota" name="mascota" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="otro">Otro</option>
+        </select>   
+
+
+        <label for="experiencia">Experiencia con mascotas:</label>
+        <textarea id="experiencia" name="experiencia"></textarea>
+
+        <label for="motivo">Motivo de adopción:</label>
+        <textarea id="motivo" name="motivo" required></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</body>
+</html>
